@@ -1,9 +1,9 @@
 const Koa = require('koa');
 const bodyParser = require('koa-bodyparser');
-const apiRouter = require('./api');
+const cors = require('koa2-cors');
+const apiRouter = require('./jayBlog');
 
 const app = new Koa();
-
 
 // 使用 cors 中间件
 app.use(cors());
